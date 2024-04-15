@@ -1,31 +1,3 @@
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
-%
-%	Copyright (c) 2021 Jitin Nair
-%
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%	
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%	
-%
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-
-%----------------------------------------------------------------------------------------
-%	DOCUMENT DEFINITION
-%----------------------------------------------------------------------------------------
-
-% article class because we want to fully customize the page and not use a cv template
 \documentclass[a4paper,12pt]{article}
 
 %----------------------------------------------------------------------------------------
@@ -137,7 +109,18 @@ Seasoned backend engineer with expertise in micro-services architecture and solv
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textbf{Software development engineer 3 | Flipkart, Bengaluru} & \hfill Jul 2021 - present \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item[--] Working in \textbf{Flipkart retail} - managing the master data for products, listings and propagation of inventory from warehouse to end users.
+        \item[--] \textbf{Lead engineer in the team of 10 members}, highly involved in tech, product \& domain level solutionings, tech staff sessions and hiring events.
+        \item[--] Redesigned flipkart's \textbf{lot management system from scratch} on HBase and migrated 12 million SKU's with no downtime. Lead team of 4 engineers and fixed core business problems related to lot lifecycle management by taking bottom up initiatives.
+        \item[--] Created an \textbf{async priority aware system} for \textbf{inventory ingestion flows} which promised TAT of \textbf{\<5 mins} for hyperlocal inventory using apache pulsar.
+        \item[--] \textbf{Designed distributed locking library} on zookeeper \& \textbf{camel's implementation with pulsar}
+        \item[--] Planned out big migrations with different strategies like \textbf{paraller paths, phased migration} to avoid big bang changes in multiple places.
+    \end{itemize}
+    \end{minipage}
+}
 \end{tabularx}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
@@ -145,8 +128,10 @@ Seasoned backend engineer with expertise in micro-services architecture and solv
 \multicolumn{2}{@{}X@{}}{
 \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
-        \item[--] long long line of blah blah that will wrap when the table fills the column width
-        \item[--] again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+        \item[--] Worked in \textbf{Oracle infinity} - a data collection and analytics product.
+        \item[--] Using \textbf{functional + OOP design patterns} to write maintainable \& extensible code in scala with a good understanding of \textbf{microservice architecture}.
+        \item[--] Created public APIs contracts and implemented on HTTP 2.0 for new MVP. Used \textbf{gRPCs proto buffs} for microservice communication which were significantly faster then http based communication.
+        \item[--] Create \textbf{query parser service} which generates complex processing queries from user’s friendly input. \item[--] Optimised authorization logic which resulted in \textbf{90\% faster access} to the application.
     \end{itemize}
     \end{minipage}
 }
@@ -154,10 +139,9 @@ Seasoned backend engineer with expertise in micro-services architecture and solv
 
 %Projects
 \section{Projects}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+Waste Classifier based on CNNs & \hfill 2018 \\ 
+Chatbot based on LSTMs under the guidance of dr. Divya Kumar. & \hfill  2019 \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -166,9 +150,7 @@ Seasoned backend engineer with expertise in micro-services architecture and solv
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
 2015 - 2019 & B.Tech (\textbf{CSE}) at \textbf{NIT, Allahabad} \hfill (GPA: 8.03) \\ 
-
 2014 & Class 12th RBSE \hfill  (87.20) \\
-
 2012 & Class 10th RBSE \hfill  (82.33) \\
 \end{tabularx}
 
@@ -177,8 +159,7 @@ Seasoned backend engineer with expertise in micro-services architecture and solv
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Java, Microservices, Dropwizard, Scala, Akka, Mysql, HBase, MongoDB, ElasticSearch, Zookeeper,\\ Kafka, RMQ, Apache Pulsar, Apache camel, CI/CD, Open API
 \end{tabularx}
 
 \vfill
